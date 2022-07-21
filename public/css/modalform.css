@@ -1,0 +1,15 @@
+form input{
+    margin-bottom: 3%;
+}
+
+.modal-body{
+    background-color: #ebedef;
+}
+
+#submit-data{
+    height: 3em;
+    width: 6em;
+    border-radius: 17px;
+    background-color: #495695;
+    border: 2px solid #d4d0af;
+}

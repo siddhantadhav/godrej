@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ebedef;
+}
+
+
+
+#about{
+    margin-top: 0;
+}
+
+section{
+    padding: 0 10%;
+}
+
+section img{
+    padding-bottom: 5%;
+}
+
+img{
+    width: 100%;
+}
+
+section h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;   
+}
+
+p{
+    font-size: 1.5rem;  
+}
+
+.darkblue{
+    color: #496595;
+}
+
+.lightblue{
+    color: #5f8dc5;
+}
+
+.skyblue{
+    color: #c6d0de;
+}
+
+.whitish{
+    color: #ebedef;
+}
+
+.philosopher{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.yesava{
+    font-family: 'Yeseva One', cursive;
+}

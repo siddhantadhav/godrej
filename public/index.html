@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godrej</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/highlight.css">
+    <link rel="stylesheet" href="css/amenities-3.css">
+    <link rel="stylesheet" href="css/modalform.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
+</head>
+
+<body>
+    <!-- modal form -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title yesava darkblue" id="exampleModalLabel">Visit Your Future Home Today</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/" method="post">
+                        <input type="text" class="form-control" placeholder="Enter Your Name" name="name">
+                        <input type="email" class="form-control" name="email" id="" placeholder="Email">
+                        <div class="row">
+                            <div class="col-3">
+                                <input type="text" class="form-control" name="country" placeholder="+91">
+                            </div>
+                            <div class="col">
+                                <input type="tel" class="form-control" name="contact" id="" placeholder="Contact Us">
+                            </div>
+                        </div>
+                        <input type="submit" class="modal-button yesava whitish" id="submit-data" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- thank you message -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Thank You !!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    WE WILL GET BACK TO YOU!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                        first</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- explore -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid"
+                    style="background-image: url(./assets/Welcome_Window/01.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+                    <div class=" h-100 d-flex justify-content-center align-items-center">
+                        <div>
+                            <img src="./assets/Welcome_Window/logo.png" alt="" class="img-fluid">
+                            <h1 class="yesava whitish" style="text-align: center; font-size: 3rem;">GODREJ HORIZON</h1>
+                            <h2 class="yesava whitish" style="text-align: center; font-size: 2rem;">DADAR - WADALA</h2>
+                            <a href="#highlight">
+                                <button class="yesava whitish" style="    color: #496595;height: 3em;width: 8em;border-radius: 17px;border:2px solid #90a7c4;font-size: 1.5rem; margin-left: 25%;">EXPLORE</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="row"
+                    style="height: 100vh; background-image: url(./assets/Welcome_Window/03.jpg); background-repeat: no-repeat; background-size: cover;">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br>
+    <!-- about us -->
+    <section id="about" style="">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#highlight">Highlights</a>
+                        </li>
+                        <div class="vertical-line d-none d-lg-block"
+                  style="width: 1px; height: 10px; background-color: #d4d0af; padding-top: 40px ;"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#amenities">Amenities</a>
+                        </li>
+                        <div class="vertical-line d-none d-lg-block"
+                  style="width: 1px; height: 10px; background-color: #d4d0af; padding-top: 40px ;"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Our Projects</a>
+                        </li>
+                        <div class="vertical-line d-none d-lg-block"
+                  style="width: 1px; height: 10px; background-color: #d4d0af; padding-top: 40px ;"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#location">Location</a>
+                        </li>
+                        <div class="vertical-line d-none d-lg-block"
+                  style="width: 1px; height: 10px; background-color: #d4d0af; padding-top: 40px ;"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mymodal" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">You Liked It! Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <div class="row" style="width: 100%;">
+            <div class="col-lg-5 col-md-12">
+                <img src="./assets/Overview/01.png" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <h1 class="yesava darkblue" style="text-align: center;">About us</h1>
+                <hr>
+                <h2 class="philosopher darkblue">THE GODREJ LEGACY, IN ALL ITS GOODNESS</h2>
+                <p class="lightblue">The Godrej story began in 1897, with the manufacturing of locks.
+                    Since then, we have set several benchmarks. From a
+                    state-of-the-art manufacturing facility in a suburb of Mumbai,
+                    we’ve reached homes, offices, industries and the hearts of
+                    millions of people in India and around the world. With a proud
+                    tradition of many firsts, we find ourselves at work every day,
+                    building on the foundation of trust that was laid 125 years ago</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- highlight -->
+    <section id="highlight" style="margin: 5% 0">
+        <h1 class="yesava darkblue" style="text-align: center;">Highlights</h1>
+        <div class="row" style="width: 100%;">
+            <div class="col-lg-4 col-md-12 col-sm-12 highlight-left ">
+                <img src="./assets/Highlight/01.png" alt="" class="img-fluid">
+                <h2 class="darkblue philosopher">Stay close to Nature</h2>
+                <p class="lightblue philosopher">Beautiful Gardens that keep <br> you close to Nature.</p>
+                <p class="darkblue philosopher">#THEGoodSideOfLife</p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img src="./assets/Highlight/03.png" alt="" class="img-fluid">
+            </div>
+            <div class="col highlight-right" style="height: 100%;">
+                <h2 class="darkblue philosopher">The City of Dreams</h2>
+                <p class="lightblue philosopher">If Mumbai is the CITY of dreams, than Godrej Horizon is the REALITY of
+                    that dream</p>
+                <h2 class="darkblue philosopher">View that feels like Dreams</h2>
+                <p class="lightblue philosopher">Serene sunrise view of the Eastern Bay.</p>
+                <img src="./assets/Highlight/02.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row" style="width: 100%;">
+            <div class="col-lg-5 col-md-12 highlight-lower-left">
+                <img src="./assets/Highlight/04.png" alt="" class="img-fluid">
+                <h2 class="darkblue philosopher">Luxury Verified!</h2>
+                <p class="lightblue philosopher">Feel luxurious of living with first class <br> modern amenities and
+                    features</p>
+            </div>
+            <div class="col highlight-lower-right">
+                <h2 class="darkblue philosopher">Connectivity, never been so Good!</h2>
+                <p class="lightblue philosopher">City center, a Location that connects you to all the necessary places,
+                    such as
+                    Eastern Express Highway, BKC, Monorails, Metro and many more at ease.
+                    Know the true convenience to have known Institutes, Hospitals, Market, etc.
+                    Close to your lovely Home.</p>
+                <img src="./assets/Highlight/05.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- amenities-external-1 -->
+    <section id="amenities" style="margin: 5% 0;">
+        <h1 class="darkblue yesava" style="text-align: center;">Amenities</h1>
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <img src="./assets/Amenities/External/01.png" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <h2 class="darkblue philosopher">MAGNIFICENT 5 STOREYED CLUBHOUSE</h2>
+                <p class="lightblue philosopher">We present to you a great deal of
+                    pleasure and enjoyable Amenities
+                    such as a clubhouse, swimming pools,
+                    gym, etc. that enhance the desirability
+                    of our residential apartments.
+                    At our project, you will find an array
+                    of premium amenities lined up just for
+                    you. Browse through our projects to
+                    find out more about what makes us
+                    stand out from the crowd.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- amenities-external-2 -->
+    <section>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/02.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Half-Olympic Swimming Pool</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12;">
+                <img src="./assets/Amenities/External/03.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Kid's Pool</p>
+            </div>
+            <div class="col">
+                <img src="./assets/Amenities/External/04.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Amphitheater</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/05.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Steam and Massage Rooms</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/06.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Mini Golf</p>
+            </div>
+            <div class="col">
+                <img src="./assets/Amenities/External/07.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Fully Equipped Gym</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- amenities-external-3 -->
+    <section style="margin: 5% 0;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 amenities-3-1">
+                <img src="./assets/Amenities/External/12.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Kid's Play Area</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 amenities-3-2">
+                <img src="./assets/Amenities/External/08.png" alt="" class="img-fluid" style="">
+                <p class="darkblue philosopher">Yoga Decks</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 amenities-3-3">
+                <img src="./assets/Amenities/External/11.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Football Court</p>
+            </div>
+            <div class="col amenities-3-4">
+                <img src="./assets/Amenities/External/09.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">2 Double Heighten Badminton Courts</p>
+            </div>
+            <!-- <div class="col">
+                <p class="darkblue philosopher">Creche</p>
+                <img src="./assets/Amenities/External/10.png" alt="" class="img-fluid">
+            </div> -->
+        </div>
+    </section>
+
+    <!-- amenities-external-4 -->
+    <section style="margin: 5% 0;">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/13.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Banquet Hall</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/14.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Indoor Games Room</p>
+            </div>
+            <div class="col">
+                <img src="./assets/Amenities/External/15.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Outdoor Work Station</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/16.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">2 Squash Court</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./assets/Amenities/External/17.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Jogging Track</p>
+            </div>
+            <div class="col">
+                <img src="./assets/Amenities/External/18.png" alt="" class="img-fluid">
+                <p class="darkblue philosopher">Library</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3bhk -->
+    <section id="project" style="margin: 5% 0;">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <h1 class="darkblue yesava" style="text-align: center;">3 BHK Apartment</h1>
+                <hr>
+                <img src="./assets/Amenities/3 BHK/01.png" alt="" class="img-fluid">
+                <img src="./assets/Amenities/3 BHK/02.png" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="./assets/Amenities/3 BHK/03.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/3 BHK/05.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/3 BHK/07.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="./assets/Amenities/3 BHK/04.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/3 BHK/06.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/3 BHK/08.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2bhk -->
+    <section style="margin: 5% 0;">
+        <div class="row">
+            <div class="col order-md-last">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <img src="./assets/Amenities/2 BHK/03.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/2 BHK/05.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/2 BHK/07.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="./assets/Amenities/2 BHK/04.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/2 BHK/06.png" alt="" class="img-fluid">
+                        <img src="./assets/Amenities/2 BHK/08.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-12 order-lg-last order-md-first order-sm-first">
+                        <h1 class="darkblue yesava">2 BHK Apartment</h1>
+                        <hr>
+                        <img src="./assets/Amenities/2 BHK/01.png" alt="" class="img-fluid" style="">
+                        <img src="./assets/Amenities/2 BHK/02.png" alt="" class="img-fluid" style="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- location -->
+    <section>
+        <h1 class="yesava darkblue" style="text-align: center;">Location</h1>
+        <img src="./assets/Location/0110.PNG" alt="" class="img-fluid">
+    </section>
+
+    <!-- disclaimer -->
+    <section style="margin: 5% 0;">
+        <h1 class="darkblue yesava" style="text-align: center;">Disclaimer</h1>
+        <p class="darkblue philosopher" style="text-align: center;">All image/s are strictly for representational
+            purposes. The specifications, pictures, images,
+            aesthetics, features, views, amenities, facilities and surroundings shown / mentioned are only for
+            representational, illustrational and indicative purpose, and the terms of the agreement for
+            sale (if any) if entered into by parties will solely govern, control and prevail. Features, fixtures,
+            fittings, goods, accessories and furniture reflected / displayed in image are strictly for
+            illustrative and representational purposes only and are not part of the standard final amenities
+            & finishes and the actual amenities will vary in planning and upon actual construction.
+            Prospective customers are requested to refer to the sanctioned plans for further information
+            for the phase or visit <a href="https://maharera.mahaonline.gov.in/" target="_blank">https://maharera.mahaonline.gov.in/</a> for further details.
+            Terms & Conditions apply. This website is meant only for information purposes. It should not be
+            considered/claimed as an official site. This website belongs to authorized channel partner of
+            Bombay Reality.</p>
+    </section>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
