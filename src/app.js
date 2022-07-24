@@ -35,8 +35,6 @@ app.post("/", async (req, res) => {
 
     const registered = await register_user.save();
     res.redirect("/");
-
-    
   } catch (error) {
     res.status(400).send(error);
   }
